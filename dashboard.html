@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>DASHBOARD</title>
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a class="lexer-link" href="#">LEXER</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="#migrate">Migrate V1 Assets</a></li>
+        <li><a href="lexstake.html">LexStake</a></li>
+        <li><a href="liquidity.html">Liquidity</a></li>
+        <li><a href="#">Trade</a></li>
+        <li><a href="leaderboard.html">Leaderboard</a></li>
+        <li><a href="#v2launch">V2 Launch</a></li>
+        <li><button class="connect-wallet-btn">Connect Wallet</button></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="box-group">
+        <div class="box">Total Trading Volume
+            <p>$269,909.95</p>
+        </div>
+        <div class="box">Total Fees
+            <p>$460.77</p>
+        </div>
+        <div class="box">Total Value Locked
+            <p>$72,737.79</p>
+        </div>
+    </div>
+    <div class="box1">
+        <div class="grid-item">
+            <p><span class="left">mXLP</span></p>
+        </div>
+        <div class="grid-item">
+            <p><span class="left">Price</span><span class="right">$1.017</span></p>
+        </div>
+        <div class="grid-item">
+            <p><span class="left">TVL</span><span class="right">$52,492.84</span></p>
+        </div>
+        <div class="grid-item">
+            <p><span class="left">APR</span><span class="right">29.26%</span></p>
+        </div>
+        <div class="grid-item">
+            <p><span class="left">Stables Percentage</span><span class="right">55.71%</span></p>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="grid-item">
+            <p><span class="left">sXLP</span></p>
+        </div>
+        <div class="grid-item">
+            <p><span class="left">Price</span><span class="right">$1.009</span></p>
+        </div>
+        <div class="grid-item">
+            <p><span class="left">TVL</span><span class="right">$20,243.43</span></p>
+        </div>
+        <div class="grid-item">
+            <p><span class="left">APR</span><span class="right">12.36%</span></p>
+        </div>
+        <div class="grid-item">
+            <p><span class="left">Stables Percentage</span><span class="right">100.00%</span></p>
+        </div>
+    </div>
+</div>
+<div class="dropdown-btn" onclick="toggleDropdown()">
+    <div class="dropbtn"> <p><span class="left">LEX</span>
+        <span class="right">0.0050</span></p>
+    </div>
+    <div class="dropdown-icon">▼</div>
+    <div class="dropdown-content">
+        <div class="grid-item">
+            <p><span class="left">APR</span><span class="right">59.34% </span></p>
+        </div>
+        <div class="grid-item">
+            <p><span class="left">Total Staked</span><span class="right">13,338,405.23 LEX ($66,745.37)</span></p>
+        </div>
+    </div>
+</div>
+<div class="extra-space"></div>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

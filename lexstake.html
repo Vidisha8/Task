@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexstake</title>
+    <link rel="stylesheet" href="lexstake.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a class="lexer-link" href="#">LEXER</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="#migrate">Migrate V1 Assets</a></li>
+            <li><a href="lexstake.html">LexStake</a></li>
+            <li><a href="liquidity.html">Liquidity</a></li>
+            <li><a href="#trade.html">Trade</a></li>
+            <li><a href="leaderboard.html">Leaderboard</a></li>
+            <li><a href="#v2launch">V2 Launch</a></li>
+            <li><button class="connect-wallet-btn">Connect Wallet</button></li>
+        </ul>
+    </nav>
+
+    <section id="center">
+        <p>Stake LEX and esLEX to earn rewards from variant LP pools.</p>
+    </section>
+    <div class="dropdown-btn" onclick="toggleDropdown()">
+        <button class="dropbtn">Claimable Rewards: $0.00</button>
+        <div class="dropdown-icon">▼</div>
+        <div class="dropdown-content">
+            <div class="grid-item">
+                <p><span class="left">ETH (WETH)</span><span class="right">0.0000 ($0.00)</span></p>
+            </div>
+            <div class="grid-item">
+                <p><span class="left">LEX</span><span class="right">0.0000 ($0.00)</span></p>
+            </div>
+            <div class="grid-item">
+                <p><span class="left">Escrowed LEX</span><span class="right">0.0000 ($0.00)</span></p>
+            </div>
+            <div class="grid-item">
+                <p><span class="left">Multiplier Points</span><span class="right">0.0000</span></p>
+            </div>
+            <div class="grid-item">
+                <p><span class="left">Staked Multiplier Points</span><span class="right">0.0000</span></p>
+            </div>
+            <div class="grid-item">
+                <p><span class="left">Total</span><span class="right">$0.00</span></p>
+            </div>
+            <button class="collect-wallet-btn">Collect Wallet</button>
+        </div>
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <div class="dropdown-content">
+                <div class="grid-item">
+                    <LEX class="left">LEX icon LEX <br>$0.0048</p>
+                </div>
+                <div class="grid-item">
+                    <p><span class="left">Wallet</span><br><span class="right">0.00 LEX ($0.00)</span></p>
+                </div>
+                <div class="grid-item">
+                    <p><span class="left">Staked</span><br><span class="right">0.00 LEX ($0.00)</span></p>
+                </div>
+                <div class="line"></div>
+                <div class="additional-content">
+                    <div class="grid-item">
+                        <p><span class="left">APR</span><span class="right">59.06%</span></p>
+                    </div>
+                    <div class="grid-item">
+                        <p><span class="left">Rewards</span><span class="right">$0.00</span></p>
+                    </div>
+                    <div class="grid-item">
+                        <p><span class="left">Multiplier Points APR</span><span class="right">100.00%</span></p>
+                    </div>
+                    <div class="grid-item">
+                        <p><span class="left">Boost Percentage</span><span class="right">0.00%</span></p>
+                    </div>
+                </div>
+                <div class="total-staked">
+                    <div class="additional-box">
+                        <p>Total Staked</p>
+                    </div>
+                </div>
+                <button class="buy-lex-btn">Buy LEX</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="dropdown-content">
+                <div class="grid-item">
+                    <LEX class="left">LEX icon LEX <br>$0.0048</p>
+                </div>
+                <div class="grid-item">
+                    <p><span class="left">Wallet</span><br><span class="right">0.00 LEX ($0.00)</span></p>
+                </div>
+                <div class="grid-item">
+                    <p><span class="left">Staked</span><br><span class="right">0.00 LEX ($0.00)</span></p>
+                </div>
+                <div class="line"></div>
+                <div class="additional-content">
+                    <div class="grid-item">
+                        <p><span class="left">APR</span><span class="right">59.06%</span></p>
+                    </div>
+                    <div class="grid-item">
+                        <p><span class="left">Rewards</span><span class="right">$0.00</span></p>
+                    </div>
+                </div>
+                <div class="additional-container-row">
+                    <div class="additional-container">
+                        <p>Total Staked</p>
+                        <p> 2,564,878.01 esLEX ($12,919.29)</p>
+                    </div>
+                    <div class="additional-container">
+                        <p>Total Supply</p>
+                        <p> 7,240,395 esLEX ($36,469)</p>
+                    </div>
+                </div>
+                <button class="buy-lex-btn">Buy LEX</button>
+            </div>
+        </div>
+    </div>
+    <div class="center-text">
+        <p>Convert esLEX tokens to LEX tokens.</p>
+        <p>Please read the vesting details before using the vaults.</p>
+    </div>
+<div class="grid-container1">
+    <div class="grid-item1">
+        <p>LEX Vault</p>
+    </div>
+    <div class="grid-item1">
+        <p>Staked Tokens</p>
+        <p class="right-aligned">0.00</p>
+    </div>
+    <div class="grid-item1">
+        <p>Reserved for Vesting</p>
+        <p class="right-aligned">0.00 / 0.00</p>
+    </div>
+    <div class="grid-item1">
+        <p>Vesting Status</p>
+        <p class="right-aligned">0.0000 / 0.0000</p>
+    </div>
+    <div class="grid-item1">
+        <p>Claimable</p>
+        <p class="right-aligned">0.0000 LEX</p>
+    </div>
+    <button class="collect-wallet-btn">Collect Wallet</button>
+</div>
+<div class="extra-space"></div>
+
+    <script src="lexstake.js"></script>
+</body>
+</html>

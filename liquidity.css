@@ -1,0 +1,278 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('back.jpg');
+    background-size: cover;
+}
+.navbar {
+    background: linear-gradient(90deg, #073a75 0%, #3e96c9 50%, #0a3463 100%);
+    overflow: hidden;
+    padding: 18px;
+}
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.navbar li {
+    float: left;
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 18px;
+}
+.navbar a.lexer-link {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: -15px;
+}
+.navbar a:hover, .navbar button:hover {
+    color: #3498db; 
+}
+.connect-wallet-btn {
+    background-color: rgb(10, 52, 99);
+    border: 1px solid grey;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-left: 110px;
+}
+.center-line {
+    margin-top: 70px;
+    font-size: 18px;
+    text-align: center; 
+    color:white;
+}
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-color: white;
+}
+
+.toggle-label {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    height: 60px;
+    background-color:grey;
+    border-radius: 30px;
+    overflow: hidden;
+    border-color: white;
+}
+#toggleBtn {
+    display: none;
+}
+.toggle-switch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color:rgb(31, 135, 186);
+    border-radius: 25px;
+    transition: transform 0.3s ease-in-out;
+}
+.toggle-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    user-select: none;
+    cursor: pointer;
+}
+
+.toggle-text:first-child {
+    left: 0;
+}
+
+.toggle-text:last-child {
+    right: 0;
+}
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    border-color: grey;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 20px;
+    border-color: grey;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 120px;
+    color: white;
+}
+.container p{
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+.container:nth-child(odd) {
+    margin-bottom:10px; 
+    margin-left: 70px;
+}
+.container:nth-child(even) {
+    margin-left:-400px;
+}
+.right-container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -360px;
+    margin-left: 700px;
+    width: 46%;
+    height: 310px;
+    border-radius: 20px; 
+}
+.right-container .toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+}
+
+.right-container .toggle-label {
+    position: relative;
+    display: inline-block;
+    width: 700px;
+    height: 45px;
+    background-color: grey;
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.right-container #rightToggleBtn {
+    display: none;
+}
+
+.right-container .toggle-switch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(32, 145, 202);
+    border-radius: 30px; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.right-container .toggle-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    user-select: none;
+}
+
+.right-container #rightToggleBtn:checked + .toggle-label .toggle-switch {
+    transform: translateX(100%);
+}
+
+.table-container {
+    margin-top: 20px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 92%;
+    margin-left: 60px;
+}
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.data-table th, .data-table td {
+    border: none;
+    padding: 30px;
+    text-align: left;
+    color: white;
+}
+.data-table tr {
+    margin-bottom: 10px; 
+}
+.data-table tr:last-child {
+    margin-bottom: 0; 
+}
+.data-table tr:hover {
+    background-color: #08508b;
+}
+.extra-space {
+    height: 150px;
+}
+.right-container .grid-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.right-container .grid-display p {
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+.right-container .grid-display1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 30px;
+    color: white;
+    border-radius: 15px;
+    background-color: grey;
+    height: 30px;
+    text-align: center;
+}
+
+.right-container .grid-display1 p {
+    font-size: 18px;
+}
+
+.right-container .grid-display1 .left-text {
+    margin-right: auto;
+}
+
+.right-container .grid-display1 .right-text {
+    margin-left: auto;
+}
+.right-container .collect-wallet-btn {
+    background-color: #129dd0;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

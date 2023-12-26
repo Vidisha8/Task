@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('back.jpg');
+    background-size: cover;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #073a75 0%, #3e96c9 50%, #0a3463 100%);
+    overflow: hidden;
+    padding: 18px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 18px;
+}
+
+.navbar a.lexer-link {
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: -15px;
+}
+
+.navbar a:hover, .navbar button:hover {
+    color: #3498db; 
+}
+.connect-wallet-btn {
+    background-color: rgb(10, 52, 99);
+    border: 1px solid grey;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-left: 110px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.box {
+    width: 30%;
+    height: 300px;
+    margin: 10px;
+    margin-left:60px;
+    border: 1px solid grey;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 15px;
+    backdrop-filter: blur(4px); 
+    -webkit-backdrop-filter: blur(3px);
+}
+
+.box-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 150%;
+}
+
+.box-group .box {
+    margin: 10px;
+    margin-top: 60px;
+    color: white;
+}
+.box1 {
+    width: 45%;
+    height: 300px; 
+    margin: 10px;
+    margin-right: auto;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 20px; 
+    text-align: left;
+}
+.box2{
+    width: 45%;
+    height: 300px; 
+    margin: 10px;
+    margin-right: auto;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 20px; 
+    text-align: left;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #052456;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%; 
+    display: grid;
+    grid-template-columns:  1fr;
+    gap: 20px; 
+    padding: 15px;
+    top: 50px;
+    margin-left: -15px;
+}
+
+
+.dropdown-content a {
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-btn {
+    padding: 15px;
+    background-color: #05284a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    margin-left:70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.dropdown-btn.clicked .dropdown-content {
+    display: block;
+}
+.grid-item {
+
+    padding: 10px;
+    text-align: left;
+}
+
+.grid-item p {
+    margin: 0;
+}
+.grid-item p span.left {
+    float: left;
+}
+
+.grid-item p span.right {
+    float: right;
+}
+.extra-space {
+    height: 150px; 
+}
+.box1 .grid-item {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 10px; 
+    padding: 10px;
+    color: white;
+}
+
+.box1 .grid-item:last-child {
+    border-bottom: none; 
+}
+
+.box1 .grid-item p {
+    margin: 0;
+}
+
+.box1 .grid-item p span.left {
+    width: 150px; 
+}
+
+.box1 .grid-item p span.right {
+    text-align: right;
+}
+.box2 .grid-item {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 10px; 
+    padding: 10px;
+    color:white;
+}
+
+.box2 .grid-item:last-child {
+    border-bottom: none; 
+}
+
+.box2 .grid-item p {
+    margin: 0;
+}
+
+.box2 .grid-item p span.left {
+    width: 150px; 
+}
+
+.box2 .grid-item p span.right {
+    text-align: right;
+}
+.box p{
+    color: greenyellow;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.box p {
+    animation: fadeIn 1s ease-in-out; 
+    animation-delay: 2s;
+}
